@@ -1,0 +1,13 @@
+
+FROM maven:3.5.2-alpine
+
+MAINTAINER zhouzhipeng <admin@zhouzhipeng.com>
+
+WORKDIR /app
+
+COPY . .
+
+
+# 编译打包
+RUN mvn package -Dmaven.test.skip=true
+

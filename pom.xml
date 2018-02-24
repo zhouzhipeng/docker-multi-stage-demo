@@ -8,4 +8,12 @@
     <artifactId>docker-multi-stage-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <pluginRepositories>
+        <!-- repo for ace dependency -->
+        <pluginRepository>
+            <id>central</id>
+            <name>central Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>

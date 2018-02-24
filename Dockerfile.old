@@ -1,0 +1,12 @@
+
+FROM openjdk:8-jre-alpine
+
+MAINTAINER zhouzhipeng <admin@zhouzhipeng.com>
+
+WORKDIR /app
+
+COPY docker-multi-stage-demo-1.0-SNAPSHOT.jar .
+
+# 运行main类
+CMD java -cp docker-multi-stage-demo-1.0-SNAPSHOT.jar com.zhouzhipeng.HelloWorld
+
